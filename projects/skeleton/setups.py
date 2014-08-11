@@ -3,7 +3,7 @@ try:
 except ImportError:
     from distutils.core import setup
     
-config = ['description': 'My Project',
+config = {'description': 'My Project',
           'author': 'My Name',
           'url': 'URL to get it at.',
           'download_url': 'Where to download it.',
@@ -12,6 +12,6 @@ config = ['description': 'My Project',
           'install_requires': ['nose'],
           'packages': ['NAME'],
           'scripts': [],
-          'name': 'projectname']
+          'name': 'projectname'}
 
 setup(**config)
